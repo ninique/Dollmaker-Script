@@ -1,0 +1,31 @@
+* 		{margin: 0; padding: 0;}
+
+body {
+font-family: verdana, sans-serif;
+font-size: 12px;
+}
+
+table {border-collapse:collapse;}
+td,th { border: 1px solid #ccc; padding: 5px 10px; text-align: center;}
+th { font-weight: bold; background: #eee;}
+
+
+form {margin-left: 5px;}
+label { display:block; width: 200px; float:left; clear:left; font-weight: bold; }
+input, select { display:block; float: left; margin-bottom: 10px;}
+#submit {clear:left;display:block;}
+
+h1 {clear:left; Font-size:16px; background: #ddd; margin-bottom: 10px; padding: 5px;}
+
+
+body {
+font-family: verdana, arial, sans-serif;
+font-size: 12px;
+margin: 30px;
+color: #666;
+}
+
+#instructions {margin-bottom: 15px; padding: 5px;}
+#instructions b { color: red;}
+
+#back {clear: left; padding: 5px 5px;}
