@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<title>Dollmaker</title>
+	<link rel="stylesheet" type="text/css" href="styles/mainstylesheet.css" charset="utf-8">
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/drag.js"></script>
+</head>
+
+<body>
+
+<!-- You can put your own content up here. You can move the dollmaker on the page using CSS (see mainstylesheet.css for details) -->
+
+
+<div id="dollmaker_container">
+	<div id="bodyArea" class="ui-corner-all">
+	<img class="skintone" src="base/full/2European.png" alt="BaseBody" width="80" height="261">
+	</div>
+	
+	<div id="swatchesArea" class="ui-corner-all">
+		<h3>Skintone:</h3>
+		<!-- **EDIT HERE** 
+		     On each line, in the <a href=""> tag, put the url of your full base.
+		     In the <img src=""> tag, put the url of the thumbnail. 
+		     You can have as many of these as you have alternate bases.
+		 -->
+		<a href="base/full/1European.png"><img src="base/thumbnails/1European.png" alt="swatch"></a>
+		<a href="base/full/2European.png"><img src="base/thumbnails/2European.png" alt="swatch"></a>
+		<a href="base/full/3Asian.png"><img src="base/thumbnails/3Asian.png" alt="swatch"></a>
+		<a href="base/full/4Asian.png"><img src="base/thumbnails/4Asian.png" alt="swatch"></a>
+		<a href="base/full/5Indian.png"><img src="base/thumbnails/5Indian.png" alt="swatch"></a>
+		<a href="base/full/6Indian.png"><img src="base/thumbnails/6Indian.png" alt="swatch"></a>
+		<a href="base/full/7African.png"><img src="base/thumbnails/7African.png" alt="swatch"></a>
+		<a href="base/full/8African.png"><img src="base/thumbnails/8African.png" alt="swatch"></a>
+
+	</div>
+	<div id="piecesArea">
+		<!-- **EDIT HERE** 
+			    This list corresponds to the tabs. Change the names of the tabs to
+			    whatever you want. You can also add or remove any number of them. 
+			    
+			    Have a look further below. Notice the <div id="tabs-x"> tags. Each
+			    of those correspond to a different tab and has that tab's content in it. 
+			    If you add or remove tabs, update the corresponding div as well. (the
+			    href of the link and the id of the div have to match!)
+		-->
+		<ul id="tabsbar">
+			<li><a href="#tabs-2">Hair</a></li>
+			<li><a href="#tabs-3">Tops</a></li>
+			<li><a href="#tabs-4">Bottoms</a></li>
+			<li><a href="#tabs-5">Shoes</a></li>
+		</ul>
+		
+		<!-- **EDIT HERE** 
+			    These divs correspond the the content of each tab. Put all the img tags
+			    for your props in them, corresponding to their categories. 
+		-->
+		
+		<div id="tabs-2"><!--Hair-->
+			<img alt="" src="images/1Hair/1257390520.png">
+			<img alt="" src="images/1Hair/1257390533.png">
+			<img alt="" src="images/1Hair/1257390544.png">
+		</div>
+		<div id="tabs-3"><!--Tops-->
+			<img alt="" src="images/2Tops/1257347014.png">
+			<img alt="" src="images/2Tops/1257347573.png">
+			<img alt="" src="images/2Tops/1257347590.png">
+			<img alt="" src="images/2Tops/1257347611.png">
+		</div>
+		<div id="tabs-4"><!--Bottoms-->
+			<img alt="" src="images/3Bottoms/1257390559.png">
+			<img alt="" src="images/3Bottoms/1257390571.png">
+			<img alt="" src="images/3Bottoms/1257390583.png">
+			<img alt="" src="images/3Bottoms/1257449592.png">
+		</div>
+			<div id="tabs-5"><!--Shoes-->
+			<img alt="" src="images/4Shoes/1257348326.png">
+			<img alt="" src="images/4Shoes/1257348338.png">
+			<img alt="" src="images/4Shoes/1259939446.png">
+		</div>
+		
+	</div><!--PiecesArea-->			
+</div><!--container-->
+</body>
+</html>

@@ -9,6 +9,7 @@ $(document).ready(function() {
 					
 		});
 		
+		//Sets what happens when you release a piece
 		$("#bodyArea").droppable({	
 			drop: function(event, ui){
 				//this is so that the element "sticks" even when tab is changed.
@@ -25,7 +26,7 @@ $(document).ready(function() {
 		//tabs
 		$("#piecesArea").tabs();
 	
-	//changes the body when swatches are clicked	
+	//changes the body when thumbnails are clicked	
 	$("#swatchesArea a").click( function() {
 		var changeSrc = $(this).attr("href");
 		$("#bodyArea>img").attr("src", changeSrc);

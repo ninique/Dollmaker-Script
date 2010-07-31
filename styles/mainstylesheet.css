@@ -1,4 +1,4 @@
-@import url("reset.css");
+@import url("reset.css"); /* This is to reset all default browser CSS to none.*/
 
 /*----------------------------------------------*/
 /*These are needed for the tab functionality and drag/drop functionality to work*/
@@ -9,19 +9,21 @@
 
 /*------------------------------------------------*/
 
+/*General body styles. Change to your own colors! */
 body {
 font-family: verdana, arial, sans-serif;
 font-size: 12px;
-margin: 30px;
 background: #eee;
 color: #666;
 }
 
-/* This specifies attributes for all the boxes.*/
+/* This specifies styles that will affect all the boxes. Change to your own colors!*/
 #bodyArea, #swatchesArea, .ui-tabs-panel{
 border: 1px solid #888;
 background: #fff;
 }
+
+/* NOTE: You can change the colors for the tabs further below . . . .*/
 
 /*this puts rounded corners around the boxes*/
 .ui-corner-all, .ui-tabs-panel{
@@ -39,11 +41,13 @@ background: #fff;
 
 /*This div contains the whole dollmaker. It can be placed anywhere on the page and everything will follow
   Keep the height unspecified so that it can stretch to accomodate varied number of pieces */
-#container {
+#dollmaker_container {
 position: absolute;
+top: 30px; /*Change these values to whatever you want*/
+left: 30px;
 }
 
-
+/*-------------------------------------------------------------------*/
 /* The box that contains the basebody */
 #bodyArea
 {
@@ -54,16 +58,12 @@ height: 350px;
 text-align: center;
 }
 
+/* Position of the base body inside its container*/
 #bodyArea .skintone {margin-top:40px;}
 
-#bodyArea .eyes {
-position:absolute;
-left: 109px;
-top: 67px;
-}
 
-
-/* The area under the base that lets you change colours/skintones*/
+/*-------------------------------------------------------------------*/
+/* The area under the base that has links for skintones */
 #swatchesArea { 
 position: absolute; 
 top: 370px;
@@ -71,6 +71,7 @@ width: 240px;
 padding: 0px 5px;
 }
 
+/* individual links for thumbnails */
 #swatchesArea a {
 display: block;
 float: left;
@@ -81,13 +82,7 @@ height:20px;
 position:relative;
 }
 
-#swatchesArea img {/* EDIT THIS to determine which section of the base you want to show in the thumbnail*/
-position:absolute;
-clip:rect(25px 54px 45px 34px); 
-top:-25px;
-left:-34px;
-}
-
+/* the title of that area */
 #swatchesArea h3 {
 font-size: 12px;
 font-weight: bold;
@@ -95,6 +90,7 @@ clear: both;
 padding: 7px 0 5px 0;
 }
 
+/*-------------------------------------------------------------------*/
 /*The tabbed area at the right that contains all the draggable pieces*/
 #piecesArea {
 position: absolute; 
@@ -102,16 +98,19 @@ left: 275px;
 width: 625px;
 }
 
-
+/*Positioning for tabs area*/
 #tabsbar {
 text-align: left; 
-padding: 5px 10px 5px 10px;
+padding: 5px 10px 5px 10px; /* This extra space is required for browser compatibility */
 }
 
+
+/*Allows the tabs to be next to eachother*/
 #tabsbar li{
 display: inline;
 }
 
+/*Individual tabs. Change to your own colors!*/
 #tabsbar li a {
 padding: 4px 10px; 
 border: 1px solid #888; 
@@ -121,14 +120,16 @@ text-decoration: none;
 font-weight:bold;
 }
 
+/*Selected tab. Change to your own colors!*/
 #tabsbar .ui-state-active a {
 border-bottom: 1px solid #fff;
-background-color: #fff; 
+background-color: #fff; /* This needs to be the the same as the background color of the panel.*/
 position:relative;
 z-index:2;
 }
 
-/* The actual tabs panel that contains the clothing pieces*/
+/*-------------------------------------------------------------------*/
+/* The panel under the tabs that contain the props*/
 .ui-tabs-panel{ 
 overflow:visible; /* so that the panel extends as you add pieces to it*/
 clear:both;
