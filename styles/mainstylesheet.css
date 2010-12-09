@@ -112,7 +112,7 @@ display: inline;
 
 /*Individual tabs. Change to your own colors!*/
 #tabsbar li a {
-padding: 4px 10px; 
+/* !!!!!IE7 */ padding: 3px 10px 4px; 
 border: 1px solid #888; 
 background-color: #ddd; 
 color: #666; 
@@ -136,10 +136,28 @@ clear:both;
 padding:5px;
 }
 
-/*The draggable pieces*/
-#piecesArea img{
-margin: 5px;
-cursor: move;
+#piecesArea div {
+padding: 10px 10px 0;
+}
 
+
+#piecesArea img{
+margin: 0 10px 10px 0;
+cursor: move;
+}
+
+/*-------------------------------------------------------------------*/
+/* Anti Right-click */
+#anti-rightclick {
+display:none;
+width: 170px;
+height:  30px;
+line-height: 1.2;
+background: #fff;
+border: 1px solid #ccc;
+padding: 3px 3px 3px 15px;
+
+position: absolute;
+z-index: 9999;
 }
 

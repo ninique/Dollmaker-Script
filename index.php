@@ -8,6 +8,9 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="scripts/drag.js"></script>
+	
+	<!--remove the following line if you do not want anti-rightclick on images-->
+	<script type="text/javascript" src="scripts/anti-rightclick.js"></script>
 </head>
 
 <body>
@@ -69,7 +72,11 @@
 		}; 
 ?>
 		</div>
-		<!--PiecesArea-->		
+		<!--PiecesArea-->	
+		
+<!--The message for anti-rightclick-->
+<div id="anti-rightclick">Please do not steal the images from this dollmaker</div>	
+	
 </div><!--container-->
 </body>
 </html>

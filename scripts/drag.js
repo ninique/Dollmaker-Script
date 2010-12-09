@@ -5,8 +5,8 @@ $(document).ready(function() {
 		//Makes the pieces draggable & sets options
 		$("#piecesArea > div > img").draggable({ 
 				//Makes it so that the pieces' z-index can be reordered
-				stack: { group: '#piecesArea > div > img', min: 500,scroll: false }				
-					
+				stack: { group: '#piecesArea > div > img', min: 500,scroll: false },
+				distance: 0		
 		});
 		
 		//Sets what happens when you release a piece
