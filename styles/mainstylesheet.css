@@ -58,9 +58,12 @@ height: 350px;
 text-align: center;
 }
 
-/* Position of the base body inside its container*/
-#bodyArea .skintone {margin-top:40px;}
+/*#bodyArea img {position: absolute;}*/
 
+/* Position of the base body elements*/
+#skintone {margin: 40px 0 0 0;}
+
+#eyes {position: absolute; top: 67px; left: 109px;}
 
 /*-------------------------------------------------------------------*/
 /* The area under the base that has links for skintones */

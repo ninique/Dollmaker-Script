@@ -26,10 +26,28 @@ $(document).ready(function() {
 		//tabs
 		$("#piecesArea").tabs();
 	
+	
+	function baseSwitch(element){
+	
+	}
+	
+	/*NOTE: It would be better to use an implementation of this that uses nth child, and put the order the same in both cases.*/
+	
 	//changes the body when thumbnails are clicked	
 	$("#swatchesArea a").click( function() {
 		var changeSrc = $(this).attr("href");
-		$("#bodyArea>img").attr("src", changeSrc);
+		var type = $(this).parent().attr("id");
+		switch (type) {
+			case "skinSwitch":
+				$("#skintone").attr("src", changeSrc);
+				break;
+			case "eyeSwitch":
+				$("#eyes").attr("src", changeSrc);
+				break;
+		}
+			
+		
+		
 		return false;
 	});
 	
