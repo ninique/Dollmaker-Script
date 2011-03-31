@@ -5,8 +5,14 @@
 	<title>Dollmaker</title>
 	<link rel="stylesheet" type="text/css" href="styles/mainstylesheet.css" charset="utf-8">
 	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+	 -->
+	<script type="text/javascript" src="jquery/jquery_2.js"></script>
+	<script type="text/javascript" src="jquery/ui.core.js"></script>
+	<script type="text/javascript" src="jquery/ui.draggable.js"></script>
+	<script type="text/javascript" src="jquery/ui.droppable.js"></script>
+	<script type="text/javascript" src="jquery/ui.tabs.js"></script>
 	<script type="text/javascript" src="scripts/drag.js"></script>
 	
 	<!--remove the following line if you do not want anti-rightclick on images-->
